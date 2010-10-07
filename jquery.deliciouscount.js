@@ -10,7 +10,8 @@ $.fn.deliciouscount = function(thisURL){
 				if (data.length > 0) {
 					count = data[0].total_posts;
 				}
-			$(target).html('<a href="http://delicious.com/url/?url='+thisURL+'" id="deliciousCount">'+count+'</a>');
+			$(target).text(count);
+			$(target).attr("href",'http://delicious.com/url/?url='+thisURL);
 			}
 		});
     });
