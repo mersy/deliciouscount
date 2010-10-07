@@ -2,7 +2,7 @@
 <script type="text/javascript" src="/js/jquery.deliciouscount.js"></script>
 <script type="text/javascript">
 jQuery(function($){
-$("#deliciousCount").mersydeliciouscount("<mt:EntryPermalink />");
+$("#deliciousCount").deliciouscount("<mt:EntryPermalink />");
 });
 </script>
 

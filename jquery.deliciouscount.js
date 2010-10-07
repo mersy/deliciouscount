@@ -1,4 +1,5 @@
-$.fn.mersydeliciouscount = function(thisURL){
+$.fn.deliciouscount = function(thisURL){
+	var target = this;
     return this.each(function(){
 		$.ajax({ 
 			type: "GET",
@@ -9,7 +10,7 @@ $.fn.mersydeliciouscount = function(thisURL){
 				if (data.length > 0) {
 					count = data[0].total_posts;
 				}
-			$("#deliciousCount").html('<a href="http://delicious.com/url/?url='+thisURL+'" id="deliciousCount">'+count+'</a>');
+			$(target).html('<a href="http://delicious.com/url/?url='+thisURL+'" id="deliciousCount">'+count+'</a>');
 			}
 		});
     });
