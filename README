@@ -1,0 +1,13 @@
+▼for mt individual
+<script type="text/javascript" src="/js/jquery.deliciouscount.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+$("#deliciousCount").mersydeliciouscount("<mt:EntryPermalink />");
+});
+</script>
+
+html example
+<a id="deliciousCount">0</a>
+
+output
+<a href="$deliciousURL$" id="deliciousCount">$count$</a>
